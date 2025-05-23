@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP-TOBACCO</title>
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <!-- Scripts (should be moved to bottom of body) -->
+    <link rel="stylesheet" href="1.bash">
+    <link rel="stylesheet" href="2.bash">
+    <link rel="stylesheet" href="sru.bash">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">
+                <i class='bx bxs-watch nav_logo-icon'></i>SHOP-TOBACCO
+            </a>
+            
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#BARRISTER GIN" class="nav_link">BARRISTER GIN</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#Chapman" class="nav_link">Chapman</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#Winston" class="nav_link">Winston</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#Captain Jack" class="nav_link">Captain Jack</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#Lucky Strike" class="nav_link">Lucky Strike</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav_btns">
+                <div class="nav_shop" id="cart-shop">
+                    <i class="bx bx-shopping-bag"></i>
+                </div>
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="bx bx-category-alt"></i>
+                </div>
+                <div class="nav_close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home Section -->
+        <!-- <section class="home" id="home">
+            <div class="home_container container grid">
+                <div class="home_data">
+                    <h1><br>Табак</h1>
+                </div>
+            </div>
+        </section> -->
+        <section class="k" id="featured">
+            <h2 class="section-title-k">Каталог</h2>
+        </section>
+        <!-- Marlboro Products -->
+        <section class="section container" id="BARRISTER GIN">
+            <h2 class="section-title">BARRISTER GIN</h2>
+            
+            <div class="featured-container grid">
+                <article class="featured-card">
+                    <span class="featured-tag">Sale</span>
+                    <img src="images/drygin.jpg" class="featured-img" alt="BARRISTER DRY GIN"> 
+                    <div class="featured-data">
+                        <h3 class="featured-title">BARRISTER DRY GIN</h3>
+                        <span class="featured-price">1159 рублей</span>
+                    </div>
+                    <button class="button featured-button">ADD TO CARD</button>
+                </article>
+                
+                <article class="featured-card">
+                    <span class="featured-tag">Sale</span>
+                    <img src="images/bluegin.jpg" class="featured-img" alt="BARRISTER BLUE GIN"> 
+                    <div class="featured-data">
+                        <h3 class="featured-title">BARRISTER BLUE GIN</h3>
+                        <span class="featured-price">1159 рублей</span>
+                    </div>
+                    <button class="button featured-button">ADD TO CARD</button>
+                </article>
+                
+                <article class="featured-card">
+                    <span class="featured-tag">Sale</span>
+                    <img src="images/pinkgin.jpg" class="featured-img" alt="BARRISTER PINK GIN"> 
+                    <div class="featured-data">
+                        <h3 class="featured-title">BARRISTER PINK GIN</h3>
+                        <span class="featured-price">1159 рублей</span>
+                    </div>
+                    <button class="button featured-button">ADD TO CARD</button>
+                </article>
+            </div>
+        </section>
+
+    </main>
+        <footer>
+            <button><a href="index.html">СИГАРЕТЫ</a>
+
+            </button>
+            <button class="str"><a class="str" href="main.html">=></a></button>
+            <p>чтобы с нами связаться и оформить заказ</p>
+            <h2>Контакты: <a href="https://t.me/magicrust26">Контакт-1</a>;<a href="https://t.me/tabaklow18">Контакт-2</a>;</h2>
+            
+        </footer>
+    <script>
+        const navMenu = document.querySelector('.nav_menu');
+        const navToggle = document.querySelector('.nav_toggle');
+        const navClose = document.querySelector('.nav_close');
+        
+        if(navToggle) {
+          navToggle.addEventListener('click', () => {
+            navMenu.classList.add('active');
+          });
+        }
+        
+        if(navClose) {
+          navClose.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+          });
+        }
+        
+        // Close menu when clicking on nav links
+        const navLinks = document.querySelectorAll('.nav_link');
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+          });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+  // Получаем все ссылки навигации
+  const navLinks = document.querySelectorAll('.nav_link');
+  
+  // Для каждой ссылки добавляем обработчик события
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault(); // Отменяем стандартное поведение
+      
+      // Получаем ID раздела из атрибута href (убираем #)
+      const sectionId = this.getAttribute('href').substring(1);
+      
+      // Находим соответствующий раздел на странице
+      const targetSection = document.getElementById(sectionId);
+      
+      if (targetSection) {
+        // Плавная прокрутка к разделу
+        targetSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+        
+        // Удаляем класс active-link у всех ссылок
+        navLinks.forEach(link => {
+          link.classList.remove('active-link');
+        });
+        
+        // Добавляем класс active-link к текущей ссылке
+        this.classList.add('active-link');
+        
+        // Закрываем мобильное меню, если оно открыто
+        const navMenu = document.getElementById('nav-menu');
+        navMenu.classList.remove('active');
+      }
+    });
+  });
+});
+const offset = 100; // Отступ в пикселях
+const elementPosition = targetSection.getBoundingClientRect().top;
+const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+window.scrollTo({
+  top: offsetPosition,
+  behavior: 'smooth'
+});
+      </script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP-TOBACCO</title>
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <!-- Scripts (should be moved to bottom of body) -->
+    <link rel="stylesheet" href="1.bash">
+    <link rel="stylesheet" href="2.bash">
+    <link rel="stylesheet" href="sru.bash">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">
+                <i class='bx bxs-watch nav_logo-icon'></i>SHOP-TOBACCO
+            </a>
+            
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#K.Ritter" class="nav_link">K.Ritter</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#Chesterfield" class="nav_link">Chesterfield</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#Camel" class="nav_link">Camel</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#Harvest" class="nav_link">Harvest</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#Kent" class="nav_link">Kent</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav_btns">
+                <div class="nav_shop" id="cart-shop">
+                    <i class="bx bx-shopping-bag"></i>
+                </div>
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="bx bx-category-alt"></i>
+                </div>
+                <div class="nav_close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home Section -->
+        <!-- <section class="home" id="home">
+            <div class="home_container container grid">
+                <div class="home_data">
+                    <h1><br>Табак</h1>
+                </div>
+            </div>
+        </section> -->
+        <section class="k" id="featured">
+            <h2 class="section-title-k">Каталог</h2>
+        </section>
+
+        <!-- Marlboro Products -->
+        <section class="section container" id="K.Ritter">
+            <h2 class="section-title">K.Ritter</h2>
+            
+            <div class="featured-container grid">
+                <article class="featured-card">
+                    <span class="featured-tag">Sale</span>
+                    <img src="images/sigarity-k-ritter-cherry-compact-1.jpg" class="featured-img" alt="K.Ritter cherry compact"> 
+                    <div class="featured-data">
+                        <h3 class="featured-title">K.Ritter cherry compact</h3>
+                        <span class="featured-price">280 рублей</span>
+                    </div>
+                    <button class="button featured-button">ADD TO CARD</button>
+                </article>
+                
+                <article class="featured-card">
+                    <span class="featured-tag">Sale</span>
+                    <img src="images/sigarity-k-ritter-grape-compact-1.jpg" class="featured-img" alt="K.Ritter Grape compact"> 
+                    <div class="featured-data">
+                        <h3 class="featured-title">K.Ritter grape compact</h3>
+                        <span class="featured-price">280 рублей</span>
+                    </div>
+                    <button class="button featured-button">ADD TO CARD</button>
+                </article>
+                
+                <article class="featured-card">
+                    <span class="featured-tag">Sale</span>
+                    <img src="images/sigarety-marlboro-aroma-brown-1.jpg" class="featured-img" alt="K.Ritter Turin compact"> 
+                    <div class="featured-data">
+                        <h3 class="featured-title">K.Ritter Turin compact</h3>
+                        <span class="featured-price">280 рублей</span>
+                    </div>
+                    <button class="button featured-button">ADD TO CARD</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Chapman Products -->
+        <section class="section container" id="Chesterfield">
+            <h2 class="section-title">Chesterfield</h2>
+            
+            <div class="featured-container grid">
+                <article class="featured-card">
+                    <span class="featured-tag">Sale</span>
+                    <img src="images/sigarety-chesterfield-aroma-red-compact-1.jpg" class="featured-img" alt="Chesterfield red"> 
+                    <div class="featured-data">
+                        <h3 class="featured-title">Chesterfield red</h3>
+                        <span class="featured-price">250 рублей</span>
+                    </div>
+                    <button class="button featured-button">ADD TO CARD</button>
+                </article>
+                
+                <article class="featured-card">
+                    <span class="featured-tag">Sale</span>
+                    <img src="images/sigarety-chesterfield-aroma-brown-compact-1.jpg" class="featured-img" alt="Chesterfield brown"> 
+                    <div class="featured-data">
+                        <h3 class="featured-title">Chesterfield brown</h3>
+                        <span class="featured-price">250 рублей</span>
+                    </div>
+                    <button class="button featured-button">ADD TO CARD</button>
+                </article>
+                
+                <article class="featured-card">
+                    <span class="featured-tag">Sale</span>
+                    <img src="images/sigarety-chesterfield-remix-summer-1.jpg" class="featured-img" alt="Chesterfield remix summer"> 
+                    <div class="featured-data">
+                        <h3 class="featured-title">Chesterfield remix summer</h3>
+                        <span class="featured-price">250 рублей</span>
+                    </div>
+                    <button class="button featured-button">ADD TO CARD</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Winston Products -->
+        <section class="section container" id="Camel">
+            <h2 class="section-title">Camel</h2>
+            
+            <div class="featured-container grid">
+                <article class="featured-card">
+                    <span class="featured-tag">Sale</span>
+                    <img src="images/sigarety-camel-compact-aroma-red-1.jpg" class="featured-img" alt="Camel aroma red"> 
+                    <div class="featured-data">
+                        <h3 class="featured-title">Camel aroma red</h3>
+                        <span class="featured-price">300 рублей</span>
+                    </div>
+                    <button class="button featured-button">ADD TO CARD</button>
+                </article>
+                
+                <article class="featured-card">
+                    <span class="featured-tag">Sale</span>
+                    <img src="images/sigarety-camel-original-filters-1.jpg" class="featured-img" alt="Camel original filters"> 
+                    <div class="featured-data">
+                        <h3 class="featured-title">Camel original filters</h3>
+                        <span class="featured-price">270 рублей</span>
+                    </div>
+                    <button class="button featured-button">ADD TO CARD</button>
+                </article>
+                
+                <article class="featured-card">
+                    <span class="featured-tag">Sale</span>
+                    <img src="images/sigarety-camel-compact-ruby-1.jpg" class="featured-img" alt="Camel compact ruby">
+                    <div class="featured-data">
+                        <h3 class="featured-title">Camel compact ruby</h3>
+                        <span class="featured-price">250 рублей</span>
+                    </div>
+                    <button class="button featured-button">ADD TO CARD</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Bohem Products -->
+        <section class="section container" id="Harvest">
+            <h2 class="section-title">Harvest</h2>
+            
+            <div class="featured-container grid">
+                <article class="featured-card">
+                    <span class="featured-tag">Sale</span>
+                    <img src="images/sigarety-harvest-brown-1.jpg" class="featured-img" alt="Harvest Brown"> 
+                    <div class="featured-data">
+                        <h3 class="featured-title">Harvest Brown</h3>
+                        <span class="featured-price">320 рублей</span>
+                    </div>
+                    <button class="button featured-button">ADD TO CARD</button>
+                </article>
+                
+                <article class="featured-card">
+                    <span class="featured-tag">Sale</span>
+                    <img src="images/sigarety-harvest-gold-vanilla-1.jpg" class="featured-img" alt="Harvest Gold"> 
+                    <div class="featured-data">
+                        <h3 class="featured-title">Harvest Gold</h3>
+                        <span class="featured-price">320 рублей</span>
+                    </div>
+                    <button class="button featured-button">ADD TO CARD</button>
+                </article>
+                
+                <article class="featured-card">
+                    <span class="featured-tag">Sale</span>
+                    <img src="images/sigarety-harvest-white-coconut-1.jpg" class="featured-img" alt="Harvest White">
+                    <div class="featured-data">
+                        <h3 class="featured-title">Harvest White</h3>
+                        <span class="featured-price">320 рублей</span>
+                    </div>
+                    <button class="button featured-button">ADD TO CARD</button>
+                </article>
+            </div>
+        </section>
+        <section class="section container" id="Kent">
+            <h2 class="section-title">Kent</h2>
+            
+            <div class="featured-container grid">
+                <article class="featured-card">
+                    <span class="featured-tag">Sale</span>
+                    <img src="images/sigarety-kent-kristall-miks-rubi-1.jpg" class="featured-img" alt="Kent kristall miks ruby"> 
+                    <div class="featured-data">
+                        <h3 class="featured-title">Kent kristall miks ruby</h3>
+                        <span class="featured-price">230 рублей</span>
+                    </div>
+                    <button class="button featured-button">ADD TO CARD</button>
+                </article>
+                
+                <article class="featured-card">
+                    <span class="featured-tag">Sale</span>
+                    <img src="images/sigarety-kent-kristall-miks-plyus-1.jpg" class="featured-img" alt="Kent kristall miks plyus"> 
+                    <div class="featured-data">
+                        <h3 class="featured-title">Kent kristall miks plyus</h3>
+                        <span class="featured-price">230 рублей</span>
+                    </div>
+                    <button class="button featured-button">ADD TO CARD</button>
+                </article>
+                
+                <article class="featured-card">
+                    <span class="featured-tag">Sale</span>
+                    <img src="images/sigarety-kent-kristall-miks-grin-1.jpg" class="featured-img" alt="Kent kristall miks grin">
+                    <div class="featured-data">
+                        <h3 class="featured-title">Kent kristall miks grin</h3>
+                        <span class="featured-price">230 рублей</span>
+                    </div>
+                    <button class="button featured-button">ADD TO CARD</button>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button class="str"><a class="str" href="index.html"><=</a></button><button class="str"><a class="str" href="main-2.html">=></a></button>
+        <p>чтобы с нами связаться и оформить заказ</p>
+        <h2>Контакты: <a href="https://t.me/magicrust26">Контакт-1</a>;<a href="https://t.me/tabaklow18">Контакт-2</a>;</h2>
+    </footer>
+    <script>
+        const navMenu = document.querySelector('.nav_menu');
+        const navToggle = document.querySelector('.nav_toggle');
+        const navClose = document.querySelector('.nav_close');
+        
+        if(navToggle) {
+          navToggle.addEventListener('click', () => {
+            navMenu.classList.add('active');
+          });
+        }
+        
+        if(navClose) {
+          navClose.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+          });
+        }
+        
+        // Close menu when clicking on nav links
+        const navLinks = document.querySelectorAll('.nav_link');
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+          });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+  // Получаем все ссылки навигации
+  const navLinks = document.querySelectorAll('.nav_link');
+  
+  // Для каждой ссылки добавляем обработчик события
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault(); // Отменяем стандартное поведение
+      
+      // Получаем ID раздела из атрибута href (убираем #)
+      const sectionId = this.getAttribute('href').substring(1);
+      
+      // Находим соответствующий раздел на странице
+      const targetSection = document.getElementById(sectionId);
+      
+      if (targetSection) {
+        // Плавная прокрутка к разделу
+        targetSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+        
+        // Удаляем класс active-link у всех ссылок
+        navLinks.forEach(link => {
+          link.classList.remove('active-link');
+        });
+        
+        // Добавляем класс active-link к текущей ссылке
+        this.classList.add('active-link');
+        
+        // Закрываем мобильное меню, если оно открыто
+        const navMenu = document.getElementById('nav-menu');
+        navMenu.classList.remove('active');
+      }
+    });
+  });
+});
+const offset = 100; // Отступ в пикселях
+const elementPosition = targetSection.getBoundingClientRect().top;
+const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+window.scrollTo({
+  top: offsetPosition,
+  behavior: 'smooth'
+});
+      </script>
+</body>
+</html>
